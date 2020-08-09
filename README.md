@@ -1,51 +1,99 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Proffy - Web
 
-## Available Scripts
+[![license](https://img.shields.io/github/license/ajaymache/travis-ci-with-github.svg)](https://opensource.org/licenses/MIT)&nbsp;&nbsp;
 
-In the project directory, you can run:
+## Proffy 1.0
+
+> This is the NLW project from (https://nextlevelweek.com). This web version includes the following technologies:
+
+- React
+- Axios
+- MobX State Tree
+- TypeScript
+
+<p align="center" >
+    <img src="docs/home-screen.png" alt="Homescreen" width="600px">
+</p>
+
+## Quick Start
+
+The Proffy project's structure:
 
 ```
-npx create-react-app web --template typescript
+├── src
+│   ├── assets
+│   ├── components
+│   ├── config
+│   ├── models
+│   ├── pages
+│   ├── routes
+│   ├── services
+│   ├── stories
+│   ├── App.tsx
+│   ├── index.tsx
+├── public
+│   ├── index.html
+├── README.md
+├── tsconfig.json
+└── package.json
+
 ```
+
+### ./src directory
+
+The inside of the src directory looks similar to the following:
+
 ```
-npx -p @storybook/cli sb init
+app
+│── assets
+│── components
+│── config
+├── models
+├── pages
+├── routes
+├── services
+├── stories
+├── index.tsx
+└── App.tsx
 ```
 
-### `yarn start`
+**assets**
+This is where your assets such as images and global stylesheet will live.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**components**
+This is where your React components will live. Each component will have a directory containing the `.tsx` file, along with a story file, and optionally `.css` file.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**models**
+This is where your app's models will live. Each model has a directory which will contain the `mobx-state-tree` model file, test file, and any other supporting files like actions, types, etc.
 
-### `yarn test`
+**config**
+This is where your app configuration will live.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**pages**
+This is where your pages components will live. A page is a React component which will take up the entire screen and be part of the navigation hierarchy. Each page will have a directory containing the `.tsx` file, along with any assets or other helper files.
 
-### `yarn build`
+**services**
+Any services that interface with the outside world will live here (think REST APIs, Push Notifications, etc.).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**routes**
+This is where your app routes will live. It forwards the supported requests (and any information encoded in request URLs) to the appropriate controller functions.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**stories**
+This is where your stories will be registered and where the Storybook configs will live
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**App.tsx** This is the entry point to your app. This is where you will find the main App component which renders the rest of the application.
 
-### `yarn eject`
+## Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+* [Typescript](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale.
+* [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js.
+* [MobX-State-Tree](https://mobx-state-tree.js.org/) - It helps you organize your application states in a very structured manner.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Authors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* **Gustavo Silva** - *Initial work* - [Proffy-Web](https://github.com/gusilva/proffy-web)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License - see the LICENSE.md file for details

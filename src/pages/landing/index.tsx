@@ -1,14 +1,26 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import logoImg from '../../assets/images/logo.svg';
-import landingImg from '../../assets/images/landing.svg';
-import studyIcon from '../../assets/images/icons/study.svg';
-import giveClassesIcon from '../../assets/images/icons/give-classes.svg';
-import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
-import './styles.css';
+import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { useObserver } from 'mobx-react-lite'
+import 'mobx-react-lite/batchingForReactDom'
+import { useStores } from '../../models/root-store/root-store-context'
 
-const Landing: React.FC = () => {
-  return (
+import logoImg from '../../assets/images/logo.svg'
+import landingImg from '../../assets/images/landing.svg'
+import studyIcon from '../../assets/images/icons/study.svg'
+import giveClassesIcon from '../../assets/images/icons/give-classes.svg'
+import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg'
+
+import './styles.css'
+
+export const Landing: React.FC = () => {
+  const { proffy } = useStores()
+
+  useEffect(() => {
+    proffy.totalConnections()
+    // eslint-disable-next-line
+    }, [])
+
+  return useObserver(() => (
     <div id="page-landing">
       <div id="page-landing-content" className="container">
         <div className="logo-container">
@@ -31,12 +43,10 @@ const Landing: React.FC = () => {
           </Link>
         </div>
         <span className="total-connections">
-          Total de 200 conexoes ja realizadas{' '}
+          Total de {proffy.connection.total} conexoes ja realizadas
           <img src={purpleHeartIcon} alt="Coracao roxo." />
         </span>
       </div>
     </div>
-  );
-};
-
-export default Landing;
+  ))
+}
