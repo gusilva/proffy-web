@@ -1,6 +1,8 @@
 # Proffy - Web
 
 [![license](https://img.shields.io/github/license/ajaymache/travis-ci-with-github.svg)](https://opensource.org/licenses/MIT)&nbsp;&nbsp;
+[![typescript](https://img.shields.io/badge/-TypeScript-%23007ACC?style=flat-square&logo=TYPESCRIPT)](https://www.typescriptlang.org/)&nbsp;&nbsp;
+[![react](https://img.shields.io/badge/Web-React-%23007ACC?style=flat-square&logo=REACT)](https://reactjs.org/)&nbsp;&nbsp;
 
 ## Proffy 1.0
 
