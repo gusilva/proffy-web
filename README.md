@@ -7,6 +7,7 @@
 [![nodejs](https://img.shields.io/badge/Server-Node.js-%23339933?style=flat-square&logo=node.js)](https://nodejs.org/)
 [![typescript](https://img.shields.io/badge/-TypeScript-%23007ACC?style=flat-square&logo=TYPESCRIPT)](https://www.typescriptlang.org/)
 [![react](https://img.shields.io/badge/Web-React-%23007ACC?style=flat-square&logo=REACT)](https://reactjs.org/)
+[![Build Status](https://travis-ci.com/gusilva/proffy-web.svg?branch=dev)](https://travis-ci.com/gusilva/proffy-web)
 
 ## Proffy 2.0
 
