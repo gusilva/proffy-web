@@ -1,11 +1,14 @@
-# Proffy - Web
+<p align="center">
+  <img src="./docs/proffy2_0.png" alt="Proffy" width="346">
+  <a href="https://reactjs.org/" target="blank"><img src="https://www.fullstackpython.com/img/logos/react.png" width="320" alt="Nest Logo" /></a>
+</p>
 
-[![license](https://img.shields.io/github/license/ajaymache/travis-ci-with-github.svg)](https://opensource.org/licenses/MIT)&nbsp;&nbsp;
-[![nodejs](https://img.shields.io/badge/Server-Node.js-%23339933?style=flat-square&logo=node.js)](https://nodejs.org/)&nbsp;&nbsp;
-[![typescript](https://img.shields.io/badge/-TypeScript-%23007ACC?style=flat-square&logo=TYPESCRIPT)](https://www.typescriptlang.org/)&nbsp;&nbsp;
-[![react](https://img.shields.io/badge/Web-React-%23007ACC?style=flat-square&logo=REACT)](https://reactjs.org/)&nbsp;&nbsp;
+[![license](https://img.shields.io/github/license/ajaymache/travis-ci-with-github.svg)](https://opensource.org/licenses/MIT)
+[![nodejs](https://img.shields.io/badge/Server-Node.js-%23339933?style=flat-square&logo=node.js)](https://nodejs.org/)
+[![typescript](https://img.shields.io/badge/-TypeScript-%23007ACC?style=flat-square&logo=TYPESCRIPT)](https://www.typescriptlang.org/)
+[![react](https://img.shields.io/badge/Web-React-%23007ACC?style=flat-square&logo=REACT)](https://reactjs.org/)
 
-## Proffy 1.0
+## Proffy 2.0
 
 > This is the NLW project from (https://nextlevelweek.com). This web version includes the following technologies:
 
